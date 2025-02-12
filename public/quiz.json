@@ -1,0 +1,308 @@
+{
+    "title": "Quiz pour les technophiles",
+    "minimum_score": 20,
+    "success_message": "Félicitations ! Vous avez réussi ce quiz. Vous êtes un véritable technophile !",
+    "failure_message": "Dommage ! Vous n'avez pas atteint le score requis. Révisez vos connaissances et réessayez !",
+    "questions": [
+        {
+            "question": "Quel est le langage de programmation principalement utilisé pour le développement web côté client?",
+            "options": [
+                "Java",
+                "Python",
+                "JavaScript",
+                "C#"
+            ],
+            "answer": "JavaScript"
+        },
+        {
+            "question": "Quel est le système d'exploitation open-source le plus populaire?",
+            "options": [
+                "Windows",
+                "macOS",
+                "Linux",
+                "Android"
+            ],
+            "answer": "Linux"
+        },
+        {
+            "question": "Quel est le nom de l'assistant vocal d'Apple?",
+            "options": [
+                "Alexa",
+                "Google Assistant",
+                "Siri",
+                "Cortana"
+            ],
+            "answer": "Siri"
+        },
+        {
+            "question": "Quel est le nom de l'assistant vocal de Samsung?",
+            "options": [
+                "Alexa",
+                "Google Assistant",
+                "Siri",
+                "Bixby"
+            ],
+            "answer": "Bixby"
+        },
+        {
+            "question": "Quel est le nom du système d'exploitation mobile développé par Apple?",
+            "options": [
+                "Android",
+                "iOS",
+                "Windows Phone",
+                "BlackBerry OS"
+            ],
+            "answer": "iOS"
+        },
+        {
+            "question": "Quel est le créateur de Linux?",
+            "options": [
+                "Bill Gates",
+                "Steve Jobs",
+                "Linus Torvalds",
+                "Mark Zuckerberg"
+            ],
+            "answer": "Linus Torvalds"
+        },
+        {
+            "question": "Quel est le langage de programmation principalement utilisé pour le développement d'applications iOS?",
+            "options": [
+                "Swift",
+                "Kotlin",
+                "Java",
+                "C++"
+            ],
+            "answer": "Swift"
+        },
+        {
+            "question": "Quel est le nom du système d'exploitation mobile développé par Google?",
+            "options": [
+                "Android",
+                "iOS",
+                "Windows Phone",
+                "BlackBerry OS"
+            ],
+            "answer": "Android"
+        },
+        {
+            "question": "Quel est le nom de la tablette développée par Apple?",
+            "options": [
+                "Galaxy Tab",
+                "Surface",
+                "iPad",
+                "Kindle Fire"
+            ],
+            "answer": "iPad"
+        },
+        {
+            "question": "Quelle entreprise a développé le processeur M1 ?",
+            "options": [
+                "Intel",
+                "AMD",
+                "NVIDIA",
+                "Apple"
+            ],
+            "answer": "Apple"
+        },
+        {
+            "question": "Quel est le protocole utilisé pour sécuriser les communications sur Internet?",
+            "options": [
+                "HTTP",
+                "FTP",
+                "SMTP",
+                "HTTPS"
+            ],
+            "answer": "HTTPS"
+        },
+        {
+            "question": "Quel est le nom de l'assistant vocal d'Apple?",
+            "options": [
+                "Alexa",
+                "Google Assistant",
+                "Siri",
+                "Cortana"
+            ],
+            "answer": "Siri"
+        },
+        {
+            "question": "Quel est le nom de l'assistant vocal de Samsung?",
+            "options": [
+                "Alexa",
+                "Google Assistant",
+                "Siri",
+                "Bixby"
+            ],
+            "answer": "Bixby"
+        },
+        {
+            "question": "Quel est le nom du système d'exploitation mobile développé par Apple?",
+            "options": [
+                "Android",
+                "iOS",
+                "Windows Phone",
+                "BlackBerry OS"
+            ],
+            "answer": "iOS"
+        },
+        {
+            "question": "Quel est le nom du système d'exploitation mobile développé par Google?",
+            "options": [
+                "Android",
+                "iOS",
+                "Windows Phone",
+                "BlackBerry OS"
+            ],
+            "answer": "Android"
+        },
+        {
+            "question": "Quel est le nom de la tablette développée par Apple?",
+            "options": [
+                "Galaxy Tab",
+                "Surface",
+                "iPad",
+                "Kindle Fire"
+            ],
+            "answer": "iPad"
+        },
+        {
+            "question": "Quel est le langage de programmation principalement utilisé pour développer des applications Android ?",
+            "options": [
+                "Swift",
+                "Java",
+                "Python",
+                "C#"
+            ],
+            "answer": "Java"
+        },
+        {
+            "question": "Quelle est la version actuelle de Windows (en 2023) ?",
+            "options": [
+                "Windows 7",
+                "Windows 8",
+                "Windows 10",
+                "Windows 11"
+            ],
+            "answer": "Windows 11"
+        },
+        {
+            "question": "Quelle est la première version d'iOS lancée avec l'iPhone en 2007 ?",
+            "options": [
+                "iOS 1",
+                "iOS 2",
+                "iPhone OS 1",
+                "Mac OS X"
+            ],
+            "answer": "iPhone OS 1"
+        },
+        {
+            "question": "Quelle est la société derrière le navigateur web Firefox ?",
+            "options": [
+                "Google",
+                "Microsoft",
+                "Mozilla",
+                "Apple"
+            ],
+            "answer": "Mozilla"
+        },
+        {
+            "question": "Quelle est la résolution standard des écrans Full HD ?",
+            "options": [
+                "1920x1080",
+                "1280x720",
+                "3840x2160",
+                "2560x1440"
+            ],
+            "answer": "1920x1080"
+        },
+        {
+            "question": "Quelle est la plateforme de développement cloud de Google ?",
+            "options": [
+                "AWS",
+                "Azure",
+                "Google Cloud Platform",
+                "IBM Cloud"
+            ],
+            "answer": "Google Cloud Platform"
+        },
+        {
+            "question": "Quelle est la technologie utilisée pour le Wi-Fi moderne ?",
+            "options": [
+                "Bluetooth",
+                "Wi-Fi 6",
+                "Zigbee",
+                "Li-Fi"
+            ],
+            "answer": "Wi-Fi 6"
+        },
+        {
+            "question": "Quelle est la mémoire vive utilisée dans les ordinateurs modernes ?",
+            "options": [
+                "RAM",
+                "ROM",
+                "SSD",
+                "HDD"
+            ],
+            "answer": "RAM"
+        },
+        {
+            "question": "Quelle est la société derrière le système d'exploitation Linux ?",
+            "options": [
+                "Microsoft",
+                "Red Hat",
+                "Canonical",
+                "Linus Torvalds"
+            ],
+            "answer": "Linus Torvalds"
+        },
+        {
+            "question": "Quelle est la technologie utilisée pour les réseaux cellulaires 5G ?",
+            "options": [
+                "Wi-Fi",
+                "Bluetooth",
+                "LTE",
+                "NR"
+            ],
+            "answer": "NR"
+        },
+        {
+            "question": "Quelle est la première entreprise à avoir commercialisé un smartphone tactile ?",
+            "options": [
+                "Apple",
+                "Samsung",
+                "IBM",
+                "Nokia"
+            ],
+            "answer": "IBM"
+        },
+        {
+            "question": "Quelle est la taille standard d'un disque dur SSD moderne ?",
+            "options": [
+                "128 Go",
+                "256 Go",
+                "512 Go",
+                "1 To"
+            ],
+            "answer": "512 Go"
+        },
+        {
+            "question": "Quelle est la société derrière le réseau social Instagram ?",
+            "options": [
+                "Facebook",
+                "Twitter",
+                "Snapchat",
+                "TikTok"
+            ],
+            "answer": "Facebook"
+        },
+        {
+            "question": "Quelle est la vitesse maximale théorique du Thunderbolt 4 ?",
+            "options": [
+                "10 Gbps",
+                "20 Gbps",
+                "40 Gbps",
+                "100 Gbps"
+            ],
+            "answer": "40 Gbps"
+        }
+    ]
+}
