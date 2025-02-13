@@ -28,7 +28,7 @@ const hasAnswer = computed( () => answer.value !== null )
 const randomOptions = computed( () => shuffleArray( props.question.options ) )
 
 let timer
-const onAnswer = ( e ) =>
+const onAnswer = ( ) =>
 {
   clearTimeout( timer )
   timer = setTimeout( () =>
@@ -41,7 +41,8 @@ onMounted( () =>
 {
   setTimeout( () =>
   {
-    emits( 'answer', answer.value )
+    answer.value = ''
+    onAnswer()
   }, 10_000 )
 } )
 
