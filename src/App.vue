@@ -4,29 +4,20 @@ import Quiz from './components/Quiz.vue';
 
 const quiz = ref( null )
 const state = ref( 'loading' )
-onMounted( () =>
+onMounted( async () =>
 {
-  fetch( '/quiz.json' )
-    .then( ( r ) =>
-    {
-      if ( r.ok )
-      {
-        return r.json()
-      }
-      throw new Error( 'Erreur lors de la récupération' )
-    } )
-    .then( ( data ) =>
-    {
-      // console.log( data )
-      quiz.value = data
-      state.value = 'idle'
-    } )
-    .catch( ( e ) =>
-    {
-      console.log( e )
-      console.error( e )
-      state.value = 'error'
-    } )
+  try
+  {
+    const response = await fetch( '/quiz.json' );
+    if ( !response.ok ) throw new Error( 'Erreur lors de la récupération' );
+    console.log( response )
+    quiz.value = await response.json();
+    state.value = 'idle';
+  } catch ( error )
+  {
+    console.error( error );
+    state.value = 'error';
+  }
 } )
 </script>
 

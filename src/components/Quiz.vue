@@ -2,8 +2,10 @@
   <div>
     <h1>{{ quiz.title }}</h1>
     <Progress :value="step" :max="quiz.questions.length -1" />
-    <Question :key="question.question" :question="question" v-if="state === 'question'" @answer="addAnswer"/>
-    <Result v-if="state === 'result'" :answers="answers" :quiz="quiz"/>
+    <transition name="fade">
+      <Question :key="question.question" :question="question" v-if="state === 'question'" @answer="addAnswer" />
+    </transition>
+    <Result v-if="state === 'result'" :answers="answers" :quiz="quiz" />
     <!-- {{ answers }} -->
   </div>
 </template>
@@ -33,3 +35,14 @@ const addAnswer = (answer) =>{
 }
 
 </script>
+<style>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+</style>

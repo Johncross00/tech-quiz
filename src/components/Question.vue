@@ -43,12 +43,12 @@ onMounted( () =>
   {
     answer.value = ''
     onAnswer()
-  }, 10_000 )
+  }, 10000 )
 } )
 
 onUnmounted( () =>
 {
-  clearTimeout( timer )
+  if ( timer ) clearTimeout( timer )
 } )
 </script>
 
