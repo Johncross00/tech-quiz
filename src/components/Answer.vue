@@ -1,7 +1,7 @@
 <template>
     <label :for="id" :class="classes">
         <input :disabled="disabled" type="radio" name="answer" :id="id" :value="value" @change="onChange" v-model="model"
-            :required />
+            required />
         {{ value }}
     </label>
 </template>

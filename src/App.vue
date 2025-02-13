@@ -17,7 +17,7 @@ onMounted( () =>
     } )
     .then( ( data ) =>
     {
-      console.log( data )
+      // console.log( data )
       quiz.value = data
       state.value = 'idle'
     } )

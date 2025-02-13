@@ -7,7 +7,7 @@
           :correctAnswer="question.answer" v-model="answer"/>
       </li>
     </ul>
-    Vous avez choisi: {{ answer }}
+    <!-- Vous avez choisi: {{ answer }} -->
     <!-- <button :disabled="!hasAnswer" @click="emits('answer', answer)">Question suivante</button> -->
   </div>
 </template>
