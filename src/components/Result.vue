@@ -1,7 +1,7 @@
 <template>
   <h1>RESULTAT</h1>
   <p>
-    {{ hasWon ? quiz.sucess_message : quiz.failure_message }}
+    {{ hasWon ? quiz.success_message : quiz.failure_message }}
   </p>
   <p>Votre score est de : {{ score }}/{{ quiz.questions.length }}</p>
 </template>
