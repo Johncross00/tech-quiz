@@ -2,7 +2,8 @@
   <div>
     <h1>RESULTAT</h1>
     <p>{{ hasWon ? quiz.success_message : quiz.failure_message }}</p>
-    <p>Votre score est de : {{ score }}/{{ quiz.questions.length }}</p>
+    <p>Votre score est de : {{ score }}/{{ quiz.questions.length }} ({{ Math.round((score / quiz.questions.length) *
+      100) }}%)</p>
   </div>
 </template>
 

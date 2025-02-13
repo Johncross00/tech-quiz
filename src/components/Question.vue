@@ -55,6 +55,10 @@ onUnmounted( () =>
 <style>
 .question {
   padding-top: 2rem;
+  padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .question button {

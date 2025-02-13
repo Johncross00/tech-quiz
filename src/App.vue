@@ -25,6 +25,7 @@ onMounted( async () =>
   <div class="container">
     <p v-if="state === 'error'">Impossible de charger le questionnaire</p>
     <div :aria-busy="state === 'loading'">
+      <span>Chargement en cours...</span>
       <Quiz :quiz="quiz" v-if="quiz" />
     </div>
   </div>
