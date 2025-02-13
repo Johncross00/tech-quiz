@@ -1,23 +1,51 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import { ref, onMounted } from 'vue'
+import Quiz from './components/Quiz.vue';
+
+const quiz = ref( null )
+const state = ref( 'loading' )
+onMounted( () =>
+{
+  fetch( '/quiz.json' )
+    .then( ( r ) =>
+    {
+      if ( r.ok )
+      {
+        return r.json()
+      }
+      throw new Error( 'Erreur lors de la récupération' )
+    } )
+    .then( ( data ) =>
+    {
+      console.log( data )
+      quiz.value = data
+      state.value = 'idle'
+    } )
+    .catch( ( e ) =>
+    {
+      console.log( e )
+      console.error( e )
+      state.value = 'error'
+    } )
+} )
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+  <div class="container">
+    <p v-if="state === 'error'">Impossible de charger le questionnaire</p>
+    <div :aria-busy="state === 'loading'">
+      <Quiz :quiz="quiz" v-if="quiz" />
     </div>
-  </header>
+  </div>
 
-  <main>
-    <TheWelcome />
-  </main>
+
 </template>
 
 <style scoped>
+.container {
+  margin-top: 2rem;
+}
+
 header {
   line-height: 1.5;
 }
